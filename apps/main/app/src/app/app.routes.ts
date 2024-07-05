@@ -23,6 +23,17 @@ export const appRoutes: Route[] = [
     } as WebComponentWrapperOptions,
   },
   {
+    path: 'visualizer',
+    component: WebComponentWrapper,
+    data: {
+      type: 'script',
+      remoteEntry: 'http://localhost:4204/remoteEntry.js',
+      remoteName: 'reactChild',
+      exposedModule: './web-components',
+      elementName: 'child-react-element',
+    } as WebComponentWrapperOptions,
+  },
+  {
     path: 'external',
     loadChildren: () =>
       loadRemoteModule({
