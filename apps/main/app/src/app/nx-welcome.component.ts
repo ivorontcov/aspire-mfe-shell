@@ -439,7 +439,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
           <div id="learning-materials" class="rounded shadow">
             <h2>Helpful Links</h2>
             <a
-              href="https://nx.dev/getting-started/intro?utm_source=nx-project"
+              href="http://localhost:4200/reactions"
               target="_blank"
               rel="noreferrer"
               class="list-item-link"
@@ -480,7 +480,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
             <a
               class="button-pill rounded shadow nx-console"
               href="http://localhost:4200/visualizer"
-              target="_blank"
               rel="noreferrer"
             >
               <img
@@ -496,8 +495,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
             </a>
             <a
               class="button-pill rounded shadow nx-console-jetbrains"
-              href="https://plugins.jetbrains.com/plugin/21060-nx-console"
-              target="_blank"
+              href="http://localhost:4200/reactions"
               rel="noreferrer"
             >
               <img
