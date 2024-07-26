@@ -466,7 +466,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
               </svg>
             </a>
             <a
-              href="https://google.com"
+              href="https://asi-api-qa.ncats.nih.gov/explorer/"
               target="_blank"
               rel="noreferrer"
               class="list-item-link"
@@ -568,7 +568,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
             </a>
             <a
               class="button-pill rounded shadow nx-console"
-              href="http://localhost:4200/visualizer"
+              href="https://asi-qa.ncats.nih.gov/browsing-inventory/?viewType=floor"
               rel="noreferrer"
             >
               <img src="/jar.svg" alt="Inventory" width="48" height="48" />
