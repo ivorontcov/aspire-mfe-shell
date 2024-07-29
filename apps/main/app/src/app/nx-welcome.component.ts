@@ -441,7 +441,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
           <div id="learning-materials" class="rounded shadow">
             <h2>Helpful Links</h2>
             <a
-              href="https://google.com"
+              href="http://aspireiotapi.ci.ncats.io/explorer/"
               target="_blank"
               rel="noreferrer"
               class="list-item-link"
@@ -491,7 +491,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
               </svg>
             </a>
             <a
-              href="https://google.com"
+              href="https://prototype-aspire-dev.ncats.nih.gov/api/v1/docs/aicp/synthplanning"
               target="_blank"
               rel="noreferrer"
               class="list-item-link"
@@ -556,7 +556,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
             </a>
             <a
               class="button-pill rounded shadow nx-console"
-              href="http://localhost:4200/visualizer"
+              href="http://aspireiotui.ci.ncats.io/dashboard"
               rel="noreferrer"
               target="_blank"
             >
@@ -570,6 +570,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
               class="button-pill rounded shadow nx-console"
               href="https://asi-qa.ncats.nih.gov/browsing-inventory/?viewType=floor"
               rel="noreferrer"
+              target="_blank"
             >
               <img src="/jar.svg" alt="Inventory" width="48" height="48" />
               <span>
