@@ -186,7 +186,8 @@ import { Component, ViewEncapsulation } from '@angular/core';
         transition-duration: 150ms;
         width: 100%;
       }
-      .list-item-link svg:first-child {
+      .list-item-link svg:first-child,
+      .list-item-link img:first-child {
         margin-right: 1rem;
         height: 1.5rem;
         transition-property: background-color, border-color, color, fill, stroke,
@@ -218,7 +219,8 @@ import { Component, ViewEncapsulation } from '@angular/core';
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 150ms;
       }
-      .list-item-link svg:last-child {
+      .list-item-link svg:last-child,
+      .list-item-link img:last-child {
         height: 1rem;
         transition-property: all;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -439,11 +441,16 @@ import { Component, ViewEncapsulation } from '@angular/core';
           <div id="learning-materials" class="rounded shadow">
             <h2>Helpful Links</h2>
             <a
-              href="https://nx.dev/getting-started/intro?utm_source=nx-project"
+              href="http://aspireiotapi.ci.ncats.io/explorer/"
               target="_blank"
               rel="noreferrer"
               class="list-item-link"
             >
+              <img src="/api.svg" alt="API" width="24" height="24" />
+              <span>
+                Chem Dash Swagger
+                <span> API Documentation </span>
+              </span>
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -454,12 +461,45 @@ import { Component, ViewEncapsulation } from '@angular/core';
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                  d="M9 5l7 7-7 7"
                 />
               </svg>
+            </a>
+            <a
+              href="https://asi-api-qa.ncats.nih.gov/explorer/"
+              target="_blank"
+              rel="noreferrer"
+              class="list-item-link"
+            >
+              <img src="/api.svg" alt="API" width="24" height="24" />
               <span>
-                Documentation
-                <span> Everything is in there </span>
+                Inventory Swagger
+                <span> API Documentation </span>
+              </span>
+              <svg
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://prototype-aspire-dev.ncats.nih.gov/api/v1/docs/aicp/synthplanning"
+              target="_blank"
+              rel="noreferrer"
+              class="list-item-link"
+            >
+              <img src="/api.svg" alt="API" width="24" height="24" />
+              <span>
+                AICP Services Swagger
+                <span> API Documentation </span>
               </span>
               <svg
                 fill="none"
@@ -480,8 +520,8 @@ import { Component, ViewEncapsulation } from '@angular/core';
             <a
               class="button-pill rounded shadow nx-console"
               href="http://localhost:4200/visualizer"
-              target="_blank"
               rel="noreferrer"
+              target="_blank"
             >
               <img
                 src="/molecule.svg"
@@ -496,9 +536,9 @@ import { Component, ViewEncapsulation } from '@angular/core';
             </a>
             <a
               class="button-pill rounded shadow nx-console-jetbrains"
-              href="https://plugins.jetbrains.com/plugin/21060-nx-console"
-              target="_blank"
+              href="http://localhost:4200/reactions"
               rel="noreferrer"
+              target="_blank"
             >
               <img
                 src="/chemistry.svg"
@@ -514,9 +554,138 @@ import { Component, ViewEncapsulation } from '@angular/core';
                 >
               </span>
             </a>
+            <a
+              class="button-pill rounded shadow nx-console"
+              href="http://aspireiotui.ci.ncats.io/dashboard"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img src="/lab.svg" alt="ChemDash" width="48" height="48" />
+              <span>
+                ChemDash
+                <span>Robots are everywhere!</span>
+              </span>
+            </a>
+            <a
+              class="button-pill rounded shadow nx-console"
+              href="https://asi-qa.ncats.nih.gov/browsing-inventory/?viewType=floor"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img src="/jar.svg" alt="Inventory" width="48" height="48" />
+              <span>
+                ASPIRE Inventory
+                <span>Know "what" and "where"</span>
+              </span>
+            </a>
+            <a
+              class="button-pill rounded shadow nx-console"
+              href="https://smartgraph.ncats.io/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                src="/smartgraph.svg"
+                alt="Smart Graph"
+                width="48"
+                height="48"
+              />
+              <span>
+                Smart Graph
+                <span>Network pharmacology investigation platform</span>
+              </span>
+            </a>
+            <a
+              class="button-pill rounded shadow nx-console"
+              href="https://askcos.ci.ncats.io/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img src="/askcos.svg" alt="ASKCOS" width="48" height="48" />
+              <span>
+                ASKCOS
+                <span
+                  >Set of computational tools to assist in synthetic planning
+                  and other aspects of organic chemistry.</span
+                >
+              </span>
+            </a>
           </div>
         </div>
         <!--  COMMANDS  -->
+        <!--
+        <div id="commands" class="rounded shadow">
+          <h2>Next steps</h2>
+          <p>Here are some things you can do with Nx:</p>
+          <details>
+            <summary>
+              <svg
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+              Add UI library
+            </summary>
+            <pre><span># Generate UI lib</span>
+
+<span># Add a component</span>
+</pre>
+          </details>
+          <details>
+            <summary>
+              <svg
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+              View interactive project graph
+            </summary>
+            <pre>nx graph</pre>
+          </details>
+          <details>
+            <summary>
+              <svg
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+              Run affected commands
+            </summary>
+            <pre><span># see what&apos;s been affected by changes</span>
+nx affected:graph
+
+<span># run tests for current changes</span>
+nx affected:test
+
+<span># run e2e tests for current changes</span>
+nx affected:e2e</pre>
+          </details>
+        </div>
+
         <p id="love">
           Carefully crafted at NCATS (NIH) with
           <svg
@@ -533,6 +702,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
             />
           </svg>
         </p>
+      </div>-->
       </div>
     </div>
   `,

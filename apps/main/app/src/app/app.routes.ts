@@ -34,6 +34,17 @@ export const appRoutes: Route[] = [
     } as WebComponentWrapperOptions,
   },
   {
+    path: 'reactions',
+    component: WebComponentWrapper,
+    data: {
+      type: 'script',
+      remoteEntry: 'http://localhost:4205/remoteEntry.js',
+      remoteName: 'reactReactions',
+      exposedModule: './web-components',
+      elementName: 'react-reactions',
+    } as WebComponentWrapperOptions,
+  },
+  {
     path: 'external',
     loadChildren: () =>
       loadRemoteModule({
