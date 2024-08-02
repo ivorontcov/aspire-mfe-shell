@@ -580,7 +580,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
             </a>
             <a
               class="button-pill rounded shadow nx-console"
-              href="https://smartgraph.ncats.io/"
+              href="https://smartgraph.scb-ncats.io/ui/"
               rel="noreferrer"
               target="_blank"
             >
